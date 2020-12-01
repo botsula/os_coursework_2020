@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="mymalloc" targetName="mymalloc" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03df755f-de89-4af7-a082-ebf3305c8826" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1kyBdw3rEFDdTtKR2HM1xzp7j35" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mymalloc" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mymalloc" TARGET_NAME="mymalloc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mymalloc" RUN_TARGET_NAME="mymalloc">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03df755f-de89-4af7-a082-ebf3305c8826" name="Default Changelist" comment="" />
+      <created>1606663041378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606663041378</updated>
+      <workItem from="1606663042601" duration="7902000" />
+      <workItem from="1606811482962" duration="1665000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="486" y="266" width="623" height="408" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606665950575">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="486" y="266" width="623" height="408" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1600.873@0.27.1600.873" timestamp="1606665950575" />
+    <state x="586" y="222" width="424" height="496" key="FileChooserDialogImpl" timestamp="1606812172015">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="586" y="222" width="424" height="496" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1606812172015" />
+    <state width="1554" height="261" key="GridCell.Tab.0.bottom" timestamp="1606691041734">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="261" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1606691041734" />
+    <state width="1554" height="261" key="GridCell.Tab.0.center" timestamp="1606691041733">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="261" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1606691041733" />
+    <state width="1554" height="261" key="GridCell.Tab.0.left" timestamp="1606691041733">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="261" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1606691041733" />
+    <state width="1554" height="261" key="GridCell.Tab.0.right" timestamp="1606691041734">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="261" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1606691041734" />
+    <state x="863" y="210" width="672" height="678" key="search.everywhere.popup" timestamp="1606666852571">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="863" y="210" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1606666852571" />
+  </component>
+</project>
