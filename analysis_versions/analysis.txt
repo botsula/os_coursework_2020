@@ -1,0 +1,113 @@
+Malloc: Analysis of Implementations through Versions
+
+There were analysed the versions of glibc malloc over the years.
+1. Comparison of malloc v.2.0 and v.2.2
+
+    Enable support for multiple arenas
+
+    Conclusion: multiple arenas.
+
+2. Comparison of malloc v.2.2 and v.2.4
+
+    This is a version (aka ptmalloc2) of malloc/free/realloc written by Doug Lea and adapted to multiple threads/arenas by Wolfram Gloger.
+    That means that the whole structure of malloc was changed.
+
+    The default malloc code is a thread-safe malloc.
+
+    Multi-threaded locks, Memory is allocated from the arena of the thread, The allocated memory is first released, because ptmalloc shrinks memory starting from the top chunk.
+
+    Conclusion: ptmalloc2, multi-threaded locks,thread arenas.
+
+3. Comparison of malloc v.2.4 and v.2.6
+
+    Mmap maximum threshold was increased for 64-bit systems.
+
+    brk() and mmap space is shared and there are no artificial limits on brk size imposed by the kernel.
+
+    Applications have started using transient allocations larger than the 128Kb as was imagined in 2001.
+
+    The VA space layout is different and brk() and mmap both can span the entire heap at will.
+
+    In this version is used a sliding mmap threshold.
+
+    Conclusion: Added sliding threshold, allocation with unlimited and large blocks.
+
+4. Comparison of malloc v.2.6 and malloc v.2.10.2
+
+    For large (>= 512 bytes) requests, it is a pure best-fit allocator.
+
+    For small (<= 64 bytes by default) requests, it is a caching allocator.
+
+    For very large requests (>= 128KB by default), it relies on system memory mapping facilities.
+
+    Conclusion: separation of small, large and very-large memory requests.
+
+5. Comparison of malloc v.2.10.2 and v.2.16.90
+
+    If a small request, check regular bin.
+
+    If brk fails, and mmap is used as a backup.
+
+    Conclusion: backup solutions if brk fails, regular sized bins.
+
+6. Comparison of malloc v.2.16.90 and v.2.22.90
+
+    Improvements in memory cleaning.
+
+    Conclusion: Memory cleaning.
+
+7. Comparison of malloc v.2.22.90 and malloc v.2.24.90
+
+    More attention is paid on the threads related to the certain arena.
+
+    A lot of code is related to the cleaning of the memory.
+
+    Conclusion: threads arena, clening memory.
+
+8. Comparison of malloc v.2.24.90 and malloc v.2.26.9000
+    Tcache technique.
+
+    The bins are rounded and aligned.
+
+    ‘size of chunk, in bytes’ was cahnged, added the A [NON_MAIN_ARENA] bit is cleared for chunks on the initial, main arena, described by the main_arena variable.
+
+    Conclusion: Tcache technique, ‘size of chunk, in bytes’ was cahnged.
+
+9. Comparison of malloc v.2.26.9000 and malloc v.2.28.9000
+
+    Focus on the security issues, performance and memory saving.
+
+    Conclusion: security issues, performance and memory saving.
+
+10. Comparison of malloc v.2.28.9000 and malloc v.2.32.9000
+
+    Use randomness from ASLR (mmap_base) to protect single-linked lists of Fast-Bins and TCache.
+
+    Conclusion: TCache improvements.
+
+
+Conclusion:
+Firstly, the basic allocation was added, then were added multiple arenas.
+Afterwards a new structure was made with ptmalloc2 (v.2.3), multi-threaded locks,thread arenas.
+Afterwards not to allocate to small or too large blocks of memory, that could not be handled that time,
+were added sliding threshold, allocation with unlimited and large blocks.
+Moreover, a new update also had a new lines of separation of small, large and very-large memory requests.
+Then were made some regular sizes of bins and a backup solutions if brk fails for the security.
+After all the optimization of blocks were paid attention on the memory cleaning.
+Added grannularity with a threads arena. And since 2.26 version were added tcache technique,
+next updates were focused on the security issues, performance and memory saving.
+Generally speaking the tcache improvements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
